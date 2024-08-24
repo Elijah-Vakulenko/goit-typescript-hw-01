@@ -2,8 +2,6 @@
 
 // Використовуючи утиліту Partial та generics, виправте тип параметра функції так, щоб уникнути помилок типізації.
 
-
-
 type User = {
   name: string;
   surname: string;
@@ -11,7 +9,7 @@ type User = {
   password: string;
 }
 
-function createOrUpdateUser(initialValues: User) {
+function createOrUpdateUser(initialValues: Partial<User>) {
   // Оновлення користувача
 }
 
